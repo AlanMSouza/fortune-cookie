@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(287deg, #BB00FF 0%, #190361 100%);
+    display: grid;
+    place-items: center;
+}
+
+main{
+    background: #FFFFFF;
+    box-shadow: 10px 10px 71px -7px rgba(0,0,0,0.75);
+    height: 35rem;
+    width: 30rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.screen1{
+    padding: 3rem;
+}
+
+.hide{
+    display: none;
+}
+
+h1, h2, p, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.screen2 p{
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: normal;
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    font-size: 1.4rem;
+    background: #E4EDF1;
+    margin-top: 1rem;
+    padding: 0.5rem 0.5rem;
+}
+
+p{
+    padding-top: 1rem;
+}
+
+img{
+    height: 13rem;
+    width: 20rem;
+    padding-top: 3rem;
+    padding-right: 2rem;
+}
+
+.biscoito-quebrado{
+    height: 13rem;
+    width: 22rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+button{
+    background-color: #FF9500;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: .4rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: none;
+}
+
+button:hover{
+    background-color: #e68d11;
+}
+
+@keyframes scaleUpFromMiddle {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.screen2 p.animated-text {
+    animation: scaleUpFromMiddle 0.5s ease forwards;
+    opacity: 0;
+    transform-origin: center;
+}
